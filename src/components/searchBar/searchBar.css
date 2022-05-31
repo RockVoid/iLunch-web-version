@@ -1,0 +1,18 @@
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 2rem);
+    margin: 0 auto;
+}
+
+.searchBar input {
+    padding: 1rem;
+    border-radius: 6px;
+    border: 2px solid #c1c1c1;
+}
+
+.searchBar button {
+    margin: 10px 0;
+    color: white;
+    background-color: red;
+}

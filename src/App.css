@@ -1,4 +1,13 @@
 /*Cross browser*/
+
+:root {
+  --main-color: red;
+  --primary-bg-color: white;
+  --secondary-bg-color: #c1c1c1;
+  --link-color: #595959bc;
+  --main-border-radius: 6px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +17,7 @@
 }
 
 body {
-  background-color: #c1c1c1;
+  background-color: var(--secondary-bg-color);
 }
 
 li {
@@ -17,18 +26,25 @@ li {
 }
 
 a {
-  color: #595959bc;
+  color: var(--link-color);
   font-weight: 500;
   text-decoration: none;
 }
 
 button {
   border: none;
-  border: 1px solid red;
-  border-radius: 6px;
-  background-color: white;
+  border: 1px solid var(--main-color);
+  border-radius: var(--main-border-radius);
+  background-color: var(--primary-bg-color);
   padding: 1rem;
   font-size: 1rem;
   font-weight: bolder;
-  color: red;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

@@ -1,7 +1,7 @@
 .searchBar {
     display: flex;
     flex-direction: column;
-    width: calc(100vw - 2rem);
+    width: calc(60vw - 2rem);
     margin: 0 auto;
 }
 
@@ -13,6 +13,6 @@
 
 .searchBar button {
     margin: 10px 0;
-    color: white;
-    background-color: red;
+    color: var(--primary-bg-color);
+    background-color: var(--main-color);
 }

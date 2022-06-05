@@ -13,6 +13,6 @@
 
 .searchBar button {
     margin: 10px 0;
-    color: var(--primary-bg-color);
-    background-color: var(--main-color);
+    color: var(--secondary);
+    background-color: var(--primary);
 }

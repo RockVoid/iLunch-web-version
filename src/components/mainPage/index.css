@@ -9,11 +9,11 @@
 }
 
 .card-content {
-    color: var(--primary-bg-color);
+    color: var(--secondary);
     background: url('https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png') no-repeat;
     background-size: cover;
     background-position: left;
-    background-color: var(--main-color);
+    background-color: var(--primary);
     box-shadow: #0000003d 0px 3px 8px;
     border-radius: var(--main-border-radius);
     padding: 1.2rem 1rem;
@@ -21,15 +21,15 @@
 }
 
 .card-content button {
-    color: var(--main-color);
+    color: var(--primary);
     margin-top: 150px;
-    border: 1px solid var(--main-color);
-    background-color: var(--primary-bg-color);
+    border: 1px solid var(--primary);
+    background-color: var(--secondary);
     font-size: 18px;
 }
 
 .card-content button:hover {
-    background-color: var(--main-color);
-    border: 1px solid var(--primary-bg-color);
-    color: var(--primary-bg-color);
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
 }

@@ -5,6 +5,8 @@
     justify-content: space-around;
     padding: 1rem;
     font-weight: 500;
+    width: 70vw;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -14,7 +16,6 @@
 
 .card-content {
     color: var(--secondary);
-    background: url('https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png') no-repeat;
     background-size: cover;
     background-position: left;
     background-color: var(--primary);
@@ -37,3 +38,15 @@
     border: 1px solid var(--secondary);
     color: var(--secondary);
 }
+
+.link-options {
+    width: 118px;
+    font-size: 0.9rem;
+    font-weight: 200;
+    padding: 12px;
+    background-color: #a5151f;
+    border-radius: var(--main-border-radius);
+}
+
+figure { text-align: center;  }
+figure img { width: 50%; height: 50%; }

@@ -16,9 +16,6 @@ export const MainPage = () => {
                     <button onClick={() => alert('Pesquisando...')}>Ver opções...</button>
                 </div>
             </div>
-            <div className="carrossel">
-                Componente de loja
-            </div>
         </section>
     );
 }

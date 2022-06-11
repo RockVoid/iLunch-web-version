@@ -1,12 +1,14 @@
 .homepage {
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     box-shadow: #959da533 0px 8px 24px;
-    background-color: #f7f7f7;
+    background-color: var(--secondary);
     border-radius: 6px;
 }
 
-h2 {
-    font-weight: 400;
+p {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem 0;
 }
 
 h5 {

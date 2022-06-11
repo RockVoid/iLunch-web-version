@@ -8,19 +8,26 @@
     width: 100vw;
 }
 
-.header__link__buttons {
-    display: flex;
-}
+@media screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
 
-.btn__criar_conta {
-    margin-right: 10px;
-    border: none;
-}
+    .header__link__buttons { margin: 10px 0; }
+}   
+
+.header__link__buttons { display: flex; }
+
+.btn__criar_conta { margin-right: 10px; border: none; }
 
 .btn__entrar {
     margin-right: 10px;
-    color: var(--secondary);
     background-color: var(--primary);
+}
+
+.btn__entrar a {
+    color: var(--white);
 }
 
 img {

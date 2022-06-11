@@ -1,10 +1,10 @@
 /*Cross browser*/
 
 :root {
-  --primary: red;
-  --secondary: white;
-  --gray: #c1c1c1;
+  --primary: #ea1d2c;
+  --secondary: #f7f7f7;
   --link-color: #595959bc;
+  --white: #ffffff;
   --main-border-radius: 6px;
 }
 
@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: var(--gray);
+  background-color: var(--secondary);
 }
 
 li {

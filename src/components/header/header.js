@@ -1,8 +1,9 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 import './header.css';
+import { Link } from 'react-router-dom';
 
-export const Header = () => {
+export const Header = ({ logged }) => {
     return (
         <div className="header">
             <div className="header__link">
@@ -23,12 +24,14 @@ export const Header = () => {
                     </ul>
                 </div>
             </div>
-            <div className="header__link">
+            {logged && <div className="header__link">
                 <div className="header__link__buttons">
                     <button className="btn__criar_conta">Criar conta</button>
-                    <button className="btn__entrar">Entrar</button>
+                    <button className="btn__entrar">
+                        <Link to="/register">Entrar</Link>
+                    </button>
                 </div>
-            </div>
+            </div>}
         </div>
     );
 };

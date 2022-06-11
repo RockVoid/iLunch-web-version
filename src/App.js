@@ -1,14 +1,15 @@
+import { Routes, Route, Link } from 'react-router-dom';
+import { Homepage } from './pages/homepage/home.js';
+import { RegisterPage } from './pages/login/index.js';
 import './App.css';
-import { Header } from './components/header';
-import { Homepage } from './pages/homepage/homepage.js';
-import { MainPage } from './components/mainPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header/>
-      <Homepage />
-      <MainPage />
+    <div className='App'>
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/register" element={<RegisterPage />}></Route>
+      </Routes>
     </div>
   );
 }

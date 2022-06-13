@@ -14,13 +14,13 @@
     color: white;
     background-color: var(--primary);
     transition: 0.5s;
-    animation: run 1s infinite;
+    animation: topdown 1s infinite;
     position: relative;
 }
 
-@keyframes run {
-    from { top: 10px; }
-    to { top: 0px; }
+@keyframes topdown {
+    from { top: 0px; }
+    to { top: 10px; }
 }
 
 .carousel-content figure {

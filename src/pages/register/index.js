@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import '../../App.css';
 import { Header } from '../../components/header/header';
+import { Link } from 'react-router-dom';
 
 export const RegisterPage = () => {
     return (
@@ -10,12 +11,13 @@ export const RegisterPage = () => {
             <div className="register-section">
                 <h2>Falta pouco pra matar sua fome</h2>
                 <span>Como deseja continuar?</span>
-                <input className="facebook-input" type="text" placeholder="Facebook" />
-                <input className="google-input" type="text" placeholder="Gmail" />
+                <button className="facebook-btn">Facebook</button>
+                <button className="google-btn">Gmail</button>
                 <div className="phone-and-email">
-                    <input className="email-input" type="text" placeholder="Email" />
-                    <input className="phone-input" type="text" placeholder="Telefone" />                    
+                    <input className="email-input" type="text" placeholder="Email Alternativo" />
+                    <input className="phone-input" type="number" placeholder="Telefone" />                    
                 </div>
+                <button className="back-btn"><Link to="/">Voltar</Link></button>
             </div>
         </>
     );

@@ -1,0 +1,71 @@
+.register-section {
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-section h2, span{
+    padding: 0.5rem 0;
+}
+
+.register-section input {
+    border: none;
+    padding: 1rem;
+    margin: 0.25rem 0;
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--link-color);
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.register-section button {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: initial;
+    margin: 0.25rem 0;
+}
+
+.facebook-btn { 
+    background-color: var(--white); 
+    border: 1px solid #0074EE;
+    color: #0074EE;
+}
+
+.facebook-btn:hover { 
+    background-color: #0074EE; 
+    border: 1px solid var(--white);
+    color: white;
+}
+
+.google-btn {  
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.google-btn:hover {  
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.facebook-btn::placeholder { color: #0074EE; }
+.google-btn::placeholder { color: var(--primary); }
+.email-input::placeholder { color: gray; }
+.phone-input::placeholder { color: gray; }
+
+.phone-and-email {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.phone-and-email input {
+    width: 48%;
+    font-size: 1.5rem;
+}
+
+.back-btn:hover { background-color: var(--primary); }
+.back-btn a { color: var(--primary); }
+.back-btn a:hover { color: var(--white); }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import { CardStore } from '../card-store';
+import { CardStore } from '../card-store/index';
 import { Carousel } from '../carousel';
 import './index.css';
 

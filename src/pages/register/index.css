@@ -66,6 +66,5 @@
     font-size: 1.5rem;
 }
 
-.back-btn:hover { background-color: var(--primary); }
+.back-btn:hover { background-color: var(--white); color: var(--primary); }
 .back-btn a { color: var(--primary); }
-.back-btn a:hover { color: var(--white); }

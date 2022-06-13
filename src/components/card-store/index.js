@@ -3,7 +3,6 @@ import '../../App.css';
 import './index.css';
 
 export const CardStore = ({ store }) => {
-    console.log(store);
     return (
         <div className="card-content">
             <span></span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import { CardStore } from '../card-store';
+import { Carousel } from '../carousel';
 import './index.css';
 
 export const MainPage = () => {
@@ -22,6 +23,7 @@ export const MainPage = () => {
             <div className="card-section">
                 {opt.map(store => {return (<CardStore store={store} key={Math.random() + 1} />)})}
             </div>
+            <Carousel />
         </section>
     );
 }

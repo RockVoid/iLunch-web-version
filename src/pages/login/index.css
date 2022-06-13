@@ -1,3 +1,5 @@
+
+
 .register-section {
     width: 80vw;
     margin: 200px auto;
@@ -19,6 +21,33 @@
     text-align: center;
     width: 100%;
     font-size: 1.5rem;
+}
+
+.facebook-input::placeholder { color: #0074EE; }
+
+.facebook-input:hover {
+    cursor: pointer;
+    background-color: #0074EE;
+    color: white;
+}
+
+.phone-input:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+.email-input:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+.google-input::placeholder { color: var(--primary) };
+.google-input:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
 }
 
 .phone-and-email {

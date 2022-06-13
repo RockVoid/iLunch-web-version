@@ -10,11 +10,11 @@ export const RegisterPage = () => {
             <div className="register-section">
                 <h2>Falta pouco pra matar sua fome</h2>
                 <span>Como deseja continuar?</span>
-                <input type="text" placeholder="Facebook" />
-                <input type="text" placeholder="Gmail" />
+                <input className="facebook-input" type="text" placeholder="Facebook" />
+                <input className="google-input" type="text" placeholder="Gmail" />
                 <div className="phone-and-email">
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Telefone" />                    
+                    <input className="email-input" type="text" placeholder="Email" />
+                    <input className="phone-input" type="text" placeholder="Telefone" />                    
                 </div>
             </div>
         </>

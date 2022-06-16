@@ -19,16 +19,11 @@
 
 .header__link__buttons { display: flex; }
 
-.btn__criar_conta { margin-right: 10px; border: none; }
+.btn__criar_conta a { color: var(--primary); }
+.btn__criar_conta { margin-right: 10px; }
 
-.btn__entrar {
-    margin-right: 10px;
-    background-color: var(--primary);
-}
-
-.btn__entrar a {
-    color: var(--white);
-}
+.btn__entrar { margin-right: 10px; background-color: var(--primary); }
+.btn__entrar a { color: var(--white); }
 
 img {
     width: 100px;

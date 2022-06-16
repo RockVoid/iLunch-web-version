@@ -48,3 +48,5 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.shadow { opacity: 0.8; }

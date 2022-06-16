@@ -26,9 +26,11 @@ export const Header = ({ logged }) => {
             </div>
             {logged && <div className="header__link">
                 <div className="header__link__buttons">
-                    <button className="btn__criar_conta">Criar conta</button>
+                    <button className="btn__criar_conta">
+                        <Link to="/register">Criar conta</Link>
+                    </button>
                     <button className="btn__entrar">
-                        <Link to="/register">Entrar</Link>
+                        <Link to="/login">Entrar</Link>
                     </button>
                 </div>
             </div>}

@@ -33,6 +33,8 @@
     color: var(--white);
 }
 
+.modal-container p { font-size: 1.2rem; }
+
 .modal-container button:hover { color: var(--primary); background-color: var(--white); border: 1px solid var(--primary);}
 
 @media screen and (max-width: 500px) {

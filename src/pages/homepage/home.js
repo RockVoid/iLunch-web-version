@@ -15,7 +15,7 @@ export const Homepage = () => {
     const checkNewUser = () => {
         if (firstTime) { JSON.stringify(localStorage.setItem('firstTime', firstTime)) }
     }
-
+    checkNewUser();
     return (
         <>
             <Header logged={true}/>

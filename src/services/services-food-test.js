@@ -1,4 +1,4 @@
-import { db } from '../firebase/index';
+import { db } from '../firebase/firebase-sdk-config';
 
 const foosTest = {
     async getMessages() {

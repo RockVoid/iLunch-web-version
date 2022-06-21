@@ -8,10 +8,12 @@ export const Header = ({ logged }) => {
         <div className="header">
             <div className="header__link">
                 <div className="header__link__logo">
-                    <img 
-                        src="http://matheuslessa.com.br/wp-content/uploads/2019/04/vale-a-pena-vender-pelo-ifood.jpg"
-                        alt="iLunch"
-                    />
+                    <Link to="/">
+                        <img 
+                            src="http://matheuslessa.com.br/wp-content/uploads/2019/04/vale-a-pena-vender-pelo-ifood.jpg"
+                            alt="iLunch"
+                        />
+                    </Link>
                 </div>
             </div>
             <div className="header__link">

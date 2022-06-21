@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 import './index.css';
 
 export const Login = () => {
-    // const verifyInput = (type, event) => {
-    //     let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    //     console.log(emailRegex.test(event.target.value));
-    // }
-
     return (
         <div className="login-container">
             <div className="login">
@@ -24,8 +19,8 @@ export const Login = () => {
                         type="password" 
                         placeholder="Senha" 
                     />
-                    <button>Entrar</button>
-                    <button>Cadastrar</button>
+                    <Link to="/"><button>Entrar</button></Link>
+                    <Link to="/register"><button>Cadastrar</button></Link>
                     <Link to="/forget-login">Esqueci minha senha</Link>
                 </div>
             </div>

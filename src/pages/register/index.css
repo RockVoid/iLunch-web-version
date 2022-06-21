@@ -29,26 +29,26 @@
 }
 
 .facebook-btn { 
-    background-color: var(--white); 
-    border: 1px solid #0074EE;
-    color: #0074EE;
-}
-
-.facebook-btn:hover { 
     background-color: #0074EE; 
     border: 1px solid var(--white);
     color: white;
 }
 
+.facebook-btn:hover { 
+    background-color: var(--white); 
+    border: 1px solid #0074EE;
+    color: #0074EE;
+}
+
 .google-btn {  
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 .google-btn:hover {  
-    border: 1px solid var(--white);
-    color: var(--white);
-    background-color: var(--primary);
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }
 
 .facebook-btn::placeholder { color: #0074EE; }
@@ -61,10 +61,15 @@
     justify-content: space-between;
     width: 100%;
 }
+
 .phone-and-email input {
     width: 48%;
     font-size: 1.5rem;
 }
 
-.back-btn:hover { background-color: var(--white); color: var(--primary); }
-.back-btn a { color: var(--primary); }
+.password-and-confirm button:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.password-and-confirm button:disabled { display: none; }

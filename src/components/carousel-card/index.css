@@ -14,7 +14,7 @@
     color: white;
     background-color: var(--primary);
     transition: 0.5s;
-    animation: topdown 1s infinite;
+    animation: topdown 1s;
     position: relative;
 }
 

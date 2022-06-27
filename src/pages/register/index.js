@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from '../../components/header/header';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithPhoneNumber } from 'firebase/auth';
 import { auth } from '../../firebase/firebase-sdk-config';
 import './index.css';
 import '../../App.css';
@@ -22,14 +22,27 @@ export const RegisterPage = () => {
 
     const register = async (e) => {
         e.preventDefault();
-        try {
-            const user = await createUserWithEmailAndPassword(
-                auth,
-                registerEmail, 
-                registerPassword,
-            );
-        } catch (error) {
-            console.log(error);
+
+        let user = null;
+        if(!registerPhone) {
+            try {
+                user = await createUserWithEmailAndPassword(
+                    auth,
+                    registerEmail, 
+                    registerPassword,
+                );
+            } catch (error) {
+                console.log(error);
+            }
+        } else {
+            try {
+                user = await signInWithPhoneNumber(
+                    auth,
+                    registerPhone, 
+                );
+            } catch (error) {
+                console.log(error);
+            }
         }
     }
 

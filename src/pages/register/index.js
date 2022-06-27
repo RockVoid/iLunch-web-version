@@ -20,14 +20,14 @@ export const RegisterPage = () => {
         registerPhone.length === 8 && alert('Telefone inválido')
     }
 
-    const register = async () => {
+    const register = async (e) => {
+        e.preventDefault();
         try {
             const user = await createUserWithEmailAndPassword(
                 auth,
-                registerEmail || registerPhone, 
+                registerEmail, 
                 registerPassword,
             );
-            console.log(user)
         } catch (error) {
             console.log(error);
         }
@@ -67,7 +67,7 @@ export const RegisterPage = () => {
                         onChange={(event) => {setRegisterPassword(event.target.value)}}
                     />
                     <button 
-                        onClick={() => console.log('clicou')}
+                        onClick={(e) => register(e)}
                         disabled={!registerPhone && !registerEmail}
                     >
                         Confirmar

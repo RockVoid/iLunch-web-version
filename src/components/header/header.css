@@ -29,3 +29,8 @@ img {
     width: 100px;
     height: 60px;
 }
+
+.cart img {
+    border: 1px solid var(--primary);
+    border-radius: var(--main-border-radius);
+}

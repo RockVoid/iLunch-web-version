@@ -6,25 +6,29 @@ const pratos = [
     {
         name: 'Carbonara',
         pratoUrl: 'https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/201906182008_2b157a73-7564-4733-94c1-8d0376e7bb39.png',
+        description: 'Prato italiano.'
     },
     {
         name: 'Caldo de cana',
         pratoUrl: 'https://akdelicatessen.com.br/wp-content/uploads/2022/04/caipirinha-de-garapa-800x420.png',
+        description: 'Bebida tipica do centro de Fortaleza.'
     },
     {
-        name: 'Pastel na brasa',
+        name: 'Pastel',
         pratoUrl: 'https://s2.glbimg.com/4ZSiCQFAKt_apvCNMVaM_z1Z1PU=/0x0:620x372/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2013/06/04/14_29_48_237_receita_pastel_de_queijo1.jpg',
+        description: 'Pra companhar seu caldo de cana :D'
     },
     {
         name: 'Arroz de leite',
         pratoUrl: 'https://cdn.panelinha.com.br/receita/1493746003533-_AY_9463.jpg',
+        description: 'Um arroz com uma vibe masi gourmet.'
     }
 ];
 
 export const Store = () => {
     return (
         <div className="store-container">
-            <h3>Coco Bambu</h3>
+            <h3>Outback SteakHouse</h3>
             <div className="img-text-container">
                 <figure>
                     <img 

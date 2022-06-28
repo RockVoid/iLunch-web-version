@@ -1,4 +1,4 @@
-import React, { useContext, useState, UseEffect, createContext, useEffect } from 'react';
+import React, { useContext, useState, createContext, useEffect } from 'react';
 import { auth } from '../firebase/firebase-sdk-config';
 
 const AuthContext = createContext();
@@ -8,6 +8,7 @@ export function useAuth() { return useContext(AuthContext) }
 export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState();
     const [loading, setLoading] = useState(true);
+    let cartGlobal = [];
 
     function signupEmail(email, password) {
         return auth.createUserWithEmailAndPassword(email, password)
@@ -29,6 +30,14 @@ export function AuthProvider({ children }) {
         return currentUser.updatePassword(password)
     }
 
+    function addItemToCart(item) {
+        cartGlobal.push(item);
+    }
+
+    function removeItemFromCart(id) {
+        cartGlobal = cartGlobal.filter(item => item.id !== id);
+    }
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             setCurrentUser(user);
@@ -40,12 +49,15 @@ export function AuthProvider({ children }) {
 
     const value = {
         currentUser,
+        cartGlobal,
         login,
         signupEmail,
         logout,
         resetPassword,
         updateEmail,
-        updatePassword
+        updatePassword,
+        addItemToCart,
+        removeItemFromCart
     }
 
     return (

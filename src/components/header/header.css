@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary);
-    width: 100vw;
+    width: 96vw;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {

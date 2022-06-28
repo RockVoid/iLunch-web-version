@@ -20,6 +20,22 @@ export const Carousel = () => {
             name: 'Habibs',
             imgSrc: 'https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/201801231937__HABIB_VERDE.jpg'
         },
+        {
+            name: 'MC Donalds',
+            imgSrc: 'https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/Logo%20McDonald_MCDON_DRIV15.jpg'
+        },
+        {
+            name: 'Eataly',
+            imgSrc: 'https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/595f29c3-3264-4e74-8089-cec0421420fb/202002101723_dmdz_i.jpg'
+        },
+        {
+            name: 'BIG Mercado',
+            imgSrc: 'https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/202010121938_31dbd467-bb46-4884-8879-e545789acc39.png'
+        },
+        {
+            name: 'DIA Mercado',
+            imgSrc: 'https://static-images.ifood.com.br/image/upload/t_thumbnail/logosgde/0dbcb1e9-b354-4306-b0f7-d485ac655131/202004061634_lP8b_.jpeg'
+        },
     ]
 
     return (

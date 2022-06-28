@@ -42,7 +42,11 @@ export const Carousel = () => {
         <div className="carousel">
             {stores.map((item, index) => {
                 return (
-                    <CarouselCard name={item.name} imgSrc={item.imgSrc} key={index} />
+                    <CarouselCard 
+                        name={item.name} 
+                        imgSrc={item.imgSrc} 
+                        key={index} 
+                    />
                 )
             })}           
         </div>
